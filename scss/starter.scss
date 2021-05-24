@@ -30,9 +30,10 @@ $enable-shadows: true;
 
 // Customize some defaults
 $body-color: #333;
-$body-bg: #fff;
+$body-bg: #f5f5f5;
 $border-radius: .4rem;
 $success: #7952b3;
+$btn-secondary: #C47E80;
 
 @import "bootstrap/scss/functions"; // Required
 @import "bootstrap/scss/variables"; // Required
@@ -41,7 +42,7 @@ $success: #7952b3;
 @import "bootstrap/scss/root"; // Required
 @import "bootstrap/scss/reboot"; // Required
 @import "bootstrap/scss/type";
-// @import "bootstrap/scss/images";
+@import "bootstrap/scss/images";
 // @import "bootstrap/scss/code";
 @import "bootstrap/scss/grid";
 // @import "bootstrap/scss/tables";
@@ -52,8 +53,8 @@ $success: #7952b3;
 // @import "bootstrap/scss/button-group";
 // @import "bootstrap/scss/input-group"; // Requires forms
 // @import "bootstrap/scss/custom-forms";
-// @import "bootstrap/scss/nav";
-// @import "bootstrap/scss/navbar"; // Requires nav
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/navbar"; // Requires nav
 // @import "bootstrap/scss/card";
 // @import "bootstrap/scss/breadcrumb";
 // @import "bootstrap/scss/pagination";
@@ -68,8 +69,8 @@ $success: #7952b3;
 @import "bootstrap/scss/modal"; // Requires transitions
 // @import "bootstrap/scss/tooltip";
 // @import "bootstrap/scss/popover";
-// @import "bootstrap/scss/carousel";
-// @import "bootstrap/scss/spinners";
+@import "bootstrap/scss/carousel";
+@import "bootstrap/scss/spinners";
 @import "bootstrap/scss/utilities";
 // @import "bootstrap/scss/print";
 
@@ -81,8 +82,151 @@ $success: #7952b3;
 @import "icon-list";
 
 body {
-  padding: 3rem 1.5rem;
+  font-family: 'Montserrat', sans-serif;
 }
+
+.bg-light {
+background-color: #C47E80 !important;
+}
+
+.round {
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
+  margin-bottom: 15px;
+}
+
+#bird{
+  float: right;
+}
+
+#center{
+margin-left: 100px;
+display: inline;
+}
+
+
+#col1{
+margin-left: 40px;
+}
+
+#col2{
+margin-left: 340px;
+margin-top: -47px;
+}
+
+#col3{
+  margin-left: 650px;
+  margin-top: -52px;
+}
+
+
+#loremipsum1{
+text-align: center;
+width: 270px;
+margin-left: -35px;
+}
+
+#loremipsum2{
+text-align: center;
+width: 270px;
+margin-left: 270px;
+margin-top: -135px;
+}
+
+#loremipsum3{
+  text-align: center;
+  width: 270px;
+  margin-left: 580px;
+  margin-top: -137px;
+}
+
+.btn-whatever{
+  background-color: #C47E80;
+  color: white;
+}
+
+#button1{
+  margin-left: 63px;
+}
+
+#button2{
+  margin-left: 370px;
+  margin-top: -55px;
+}
+
+#button3{
+  margin-left: 680px;
+  margin-top: -55px;
+}
+
+#hr1{
+  margin-top: 130px;
+}
+
+#loremipsum4{
+  text-align: left;
+  width: 520px;
+}
+
+#image1{
+  width: 280px;
+ margin-top: 0px;
+}
+
+#title1{
+  padding-top: 40px;
+}
+
+#hr2{
+  margin-top: 42px;
+}
+
+#image2{
+  width: 280px;
+}
+
+#title2{
+ margin-left: 295px;
+ padding-top: 40px;
+}
+
+#loremipsum5{
+  text-align: left;
+  width: 520px;
+  margin-left: 295px;
+}
+
+#hr3{
+  margin-top: 42px;
+}
+
+#image3{
+  width: 280px;
+}
+
+#title3{
+  padding-top: 40px;
+}
+
+#loremipsum6{
+  text-align: left;
+  width: 510px;
+}
+
+#hr4{
+  margin-top: 42px;
+}
+
+footer{
+ height: 60px;
+ background-color: #C47E80;
+ color: white;
+ text-align: center;
+ padding-top: 20px;
+}
+
+
 
 // Style Bootstrap icons
 .bi {
